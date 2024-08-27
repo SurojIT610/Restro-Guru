@@ -9,14 +9,10 @@ const Navbar = ({ onSearch }) => {
   // Calculate total number of items in the cart
   const cartItemCount = items.reduce((total, item) => total + item.quantity, 0);
 
-
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <h1 className="navbar-brand">
-          GutkaApp
-        </h1>
+        <h1 className="navbar-brand">Restro Guru</h1>
         <button
           className="navbar-toggler"
           type="button"
@@ -31,11 +27,7 @@ const Navbar = ({ onSearch }) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/"
-              >
+              <Link className="nav-link active" aria-current="page" to="/">
                 All Food
               </Link>
             </li>
